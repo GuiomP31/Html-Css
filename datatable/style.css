@@ -1,0 +1,45 @@
+
+/* style.css */
+
+body {
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    margin-left: 50px;
+   
+}
+h1 {color: brown;
+    font-size: larger;
+    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+    font-style: bold;
+}
+/*  visualisation des bordures de tableau  */
+
+table, th, td {
+    border-style: solid;
+    border-width: 1px;
+    border-color: black;
+    border-collapse: collapse;
+}
+
+/*  espacement et alignement dans les cellules */
+
+th, td {
+    padding: 5px;
+    text-align: center;
+}
+
+
+th {
+    background-color: burlywood;
+    color: white;
+}
+
+tr:nth-child(even) /*paire*/
+{
+   background-color:grey;
+}
+
+/* Quand on passe avec la souris change de couleur*/
+tr:hover {
+    background-color: aqua;
+    
+}

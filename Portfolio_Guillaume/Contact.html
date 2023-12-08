@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="contact.css">
+    
+    <title>Contact</title>
+    
+</head>
+<body>
+    <div>
+        <h1>Formulaire</h1>
+        <p>Pour tout contact, remplissez le formulaire !!!</p>
+    </div>
+        <form action="">
+            <fieldset>
+                <legend>Formulaire contact</legend> 
+                <div id="inscrip">
+                    <p>Veuillez remplir ce formulaire afin de me laisser un message.</p>
+                    <img class="ordi" src="img/ordinateur.jpg" alt="orninateur">    
+                </div>
+                <!-- La balise Table pour formater l'affichage du formulaire -->
+                <table>
+                    <tr>
+                        <td><label>Nom</label></td>
+                        <td><input type="text" placeholder="saisir votre nom" name="nom" required/> </td>
+                    </tr>    
+                    <tr>
+                        <td><label>Prenom</label></td>
+                        <td><input type="text" placeholder="saisir votre prenom" name="prenom" required /></td>
+                    </tr>    
+                    <tr>
+                        <td><label>Email</label></td>
+                        <td><input type="email" placeholder="saisir votre Email" name="prenom" required /></td>
+                    </tr>    
+                    <tr>
+                        <td><label for="msg">Message</label></td>
+                        <td><textarea id="msg" name="user_message" required></textarea></td>
+                    </tr>   
+                    <tr>
+                        <td colspan="2"><input type="button" value="Envoyer" /> <input type="reset" value="Annuler" /></td>
+                    </tr>
+                    
+                </table>
+            </fieldset>
+        </form>
+        
+
+        <div class="onglets">
+            <ul>
+                <li><a href="CV.html">CV</a></li>
+                <li><a href="LiensUtiles.html">LiensUtiles</a></li>
+            </ul>
+        </div>
+        <p>Retourner à la page <a href="index.html" title="Retourner à l'accueil">Accueil</a></p>
+        <div class="footer">
+            <footer>&copy; Guillaume tous droits réservés 2021</footer>
+        </div>
+</body>
+</html>

@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="fr">
+
+<head>
+    <title>Formulaire Inscription</title>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+<div>
+    <h1>Formulaire</h1>
+    <p>Voici un exemple de formulaire à remplir.</p>
+</div>
+    <form>
+
+        <fieldset>
+            <legend>Formulaire d'inscription à une formation FMS-EA</legend> 
+            <div id="inscrip">
+                <p>Veuillez remplir ce formulaire afin de valider votre choix.</p>
+                <img class="rotationImage" src="logo_fms.png" alt="logo fms"> 
+            </div>
+            <!-- La balise Table pour formater l'affichage du formulaire -->
+            <table>
+                <tr>
+                    <td><label>Nom</label></td>
+                    <td><input type="text" placeholder="saisir votre nom" /> </td>
+                </tr>
+
+                <tr>
+                    <td><label>Prenom</label></td>
+                    <td><input type="text" placeholder="saisir votre prenom" /></td>
+                </tr>
+
+                <tr>
+                    <td><label>Email</label></td>
+                    <td><input type="email" placeholder="saisir votre Email" /></td>
+                </tr>
+
+                <tr>
+                    <td>Sexe</td>
+                    <!-- Les deux inputs radios doivent avoir le meme nom -->
+                    <td>
+                        Masculin <input type="radio" name="sexe" value="M" checked="checked">
+                        Féminin <input type="radio" name="sexe" value="F">
+                    </td>
+                </tr>
+
+                <tr>
+                    <!-- Pour réstreindre le type de fichiers on utilise l'attribut "accept" -->
+                    <td><label>Photo</label></td>
+                    <td><input type="file" accept="image/jpeg,image/png"></td>
+                </tr>
+
+                <tr>
+                    <td><label>Département</label></td>
+                    <td>
+                        <select>
+                            <option>Haute-Garonne</option>
+                            <option>Gers</option>
+                            <option>Ariège</option>
+                            <option>Pyrénées-Orientales</option>
+                        </select>
+                    </td>
+                </tr>
+
+                <tr>
+                    <!-- l'utilisation l'attribut multiple permet le choix de plusieurs valeurs des options -->
+                    <td>Les langages préferés </td>
+                    <td><select multiple="multiple">
+                            <option>Angular</option>
+                            <option>Java</option>
+                            <option>Spring</option>
+                            <option>PHP</option>
+                            <option>HTML&#47;CSS</option>
+                            <option>PrestaShop</option>
+                        </select><br> (Pour faire plusieurs choix maintenir la touche CTRL enfoncée)</td>
+                </tr>
+
+                <tr>
+                    <td><label>Domaines d'actvités</label></td>
+                    <td><input type="checkbox"> Informatique <input type="checkbox"> Gestion <input type="checkbox">
+                        Pédagogique</td>
+                </tr>
+
+                <tr>
+                    <td><label for="msg">Message :</label></td>
+                    <td><textarea id="msg" name="user_message"></textarea></td>
+                </tr>
+
+                <tr>
+                    <td colspan="2"><input type="submit" value="Envoyer" /> <input type="reset" value="Annuler" /></td>
+                </tr>
+            </table>
+        </fieldset>
+    </form>
+    <div class="footer">
+        <p>Guillaume</p>
+        <footer>&copy;FMS-EA Company</footer>
+    </div>
+    
+</body>
+
+</html>

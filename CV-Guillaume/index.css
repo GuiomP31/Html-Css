@@ -1,0 +1,184 @@
+/*@import url('https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@1,500&family=Playfair+Display&family=Source+Code+Pro:wght@500&display=swap');*/
+
+@media screen and (max-width: 6000px) {/*grand écran*/
+    /* L'astérisque (*) est le sélecteur universel en CSS. Il correspond à un élément de n'importe quel type*/
+
+
+
+    /*******************************************/
+*{
+    font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+}
+
+body{
+    background: rgb(27, 27, 43);
+    cursor:pointer;  
+}
+
+p {
+    font-size: 1.7em;
+    line-height: 1.2em;
+    color:rgb(25, 25, 241);
+}
+
+
+/***********************  HEADER & FOOTER  ******************************/
+
+header, footer{
+    width: 100%;
+    padding: 20px 0px;   
+    box-shadow: 0px 0px 15px #333;
+}
+
+header h1 {  
+    color: rgb(9, 238, 9);
+    font-size: 2.6em;
+    font-style: italic;
+    font-family:Cambria, Cochin, Georgia, Times, 'Times New Roman', serif ;
+    width: 90%;
+    text-align: right;
+    margin-left: auto;
+}
+
+header h3 {
+    color: rgb(9, 238, 9);
+    font-size: 2.6em;
+    font-style: italic;
+    font-family:Arial, Helvetica, sans-serif;
+    width: 90%;
+    text-align: left;
+    margin-top: 25px;
+} 
+
+footer {
+    width: 100%;
+    margin: auto;
+    font-size: x-large;
+    font-family:-apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    border-top: 3px solid red;
+    border-radius: 35px;
+    text-align: center;
+    color:teal; 
+}
+
+h2 {  
+    color:forestgreen;
+    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    /*text-decoration: underline red;*/
+    font-size: 2.9em;
+}
+
+h3 {
+    color: rgb(161, 51, 51);
+    text-align:justify;
+    font-style: italic;
+    width: 95%;
+    font-size: 1.9em ;
+    font-family:-apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+}
+
+h4 {
+    text-align: center;
+    color: magenta;
+    font-family:monospace;
+    font-style:oblique;
+    width: 96%;
+    font-size: 2.4em ; 
+}
+/*********************************  SECTIONS  ********************************/
+section{
+    display: flex; 
+    flex-flow: row wrap;
+    justify-content: center;
+    width: 100%;
+    padding-bottom: 20px;
+    margin: 20px auto;
+    box-shadow: 0px 0px 10px black;
+    border-style: double black;
+    border-radius: 25px;
+    background-color:rgb(211, 166, 211);
+}
+
+section h2{
+   font-family: cursive;
+   font-style: oblique;
+    margin: 20px 0;
+    width: 90%;
+}
+
+section > div{
+    width: 90%;
+}
+
+
+
+/***************************  SECTION INFOS  *****************************/
+
+
+
+.photo{
+    text-align: center;
+}
+
+.photo img{  
+    width: 15%;
+    height: auto;
+    border: 3px solid white;
+    box-shadow: 0px 0px 10px #778;
+    border-radius: 50%;
+    margin-top: -80px;
+}
+
+.prese  img {
+    display:inline-flex;
+    text-align: center;
+    padding: 10px 0px auto 0px;
+    margin: 10px auto 30px auto;
+    border: 10px;
+    font-size: 1.9em;
+    box-shadow: 0px 0px 10px rgb(0, 0, 255);
+    border-radius: 12px;
+}
+
+
+
+/****************************  SECTION CONTACT  ********************************/
+
+.contact {
+    flex: 0 1 50%;  
+    flex-flow: column-reverse;
+    margin-bottom: 50px;
+    text-align:center;
+    
+}
+
+.contact img{
+    position:static;
+    float: inline-start;
+    width: 80px;
+    height: 80px;
+    border-radius: 60%;
+}
+
+
+/************************  SECTION CENTRES D'INTERET  *********************/
+
+#centresinteret {
+    font-size: 1.4em;
+    color: rgb(0, 128, 122);
+    flex: 0 1 50%;
+    display: flex;
+    flex-flow: column wrap;
+    align-items: center;
+    margin-bottom: 20px;
+}
+
+.centresinteret img{
+    width: 60px;
+    height: 60px;
+    border-radius: 30%;
+    box-shadow: 1px 1px 15px black;
+    
+}
+
+

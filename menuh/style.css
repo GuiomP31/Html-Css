@@ -1,0 +1,11 @@
+ ul{
+    margin-top: 50px;
+}
+ li{
+display:inline-block;
+width: 100px;
+padding: 1.5em;
+background-color: violet;
+color: black;
+font-family: 'Times New Roman', Times, serif;
+ }
